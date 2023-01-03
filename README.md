@@ -10,7 +10,7 @@ With all the values from the FSM graph it is able to be converted to a truth tab
 ## K-Map Boolen Expressions
 ![bool](img/algebra.png)
 After working out the truth table from before we can create boolen expressions for the next state and the outputs based on the current state and inputs for each column. which resolted in the upper 4 tables. With 1, 0, and d values based on the inputs and current state of each. We then make the boolen expressions for each table which resulted in these equations :
-S0 = X1'X3 X4' + X2'X3 X4 + X2 X3'X4 + X1 X3'X4'
+S0 = X1'X3 X4' + X2'X3 X4 + X2 X3'X4 + X1 X3'X4' <br \>
 S1 = X1'X2'X4 + X2 X4' + X1 X4'
 O0 = X1
 O1 = X2
