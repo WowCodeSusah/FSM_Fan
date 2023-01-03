@@ -24,6 +24,7 @@ O1 = X2
 
 with ' being a negation value, X1 and X2 for the input values, and X3 and X4 for the current state values.
 ## Output
+Now in C code the machine works as intended with 2 input values one being for button 1 and the second being for button 2 in the C code these data values are input1 and input2. These inputs work in the same way as in the first finite state machine graph that being when 01 is pressed it moves forward and if 10 is pressed it will go backwards. This is also true for 00 where nothing will happen. For each state refer to the images below.
 ### State 1
 ![1](img/default.png)
 ### State 2
