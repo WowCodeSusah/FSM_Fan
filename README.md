@@ -1,4 +1,6 @@
 # Fan Simulation in FSM
+## Brief Description
+This code is a simulation of a fan's dial with 4 states which are off, speed 1, speed 2, and speed 3. Due to the nature of a dial the states can move back and forth. For example speed off can only go to speed 1 or speed 3 but cannot go to speed 2.
 ## Finite State Machine Graph
 ![FSM](img/Ex.png)
 ## K-Map Truth Table
