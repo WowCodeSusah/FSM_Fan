@@ -247,7 +247,7 @@ int main() {
             }
             printf("\e[1;1H\e[2J");
         }
-        state(input2, input1, s0, s1, &S0, &S1);
+        state(input1, input2, s0, s1, &S0, &S1);
         s0 = S0;
         s1 = S1;
         output(s0, s1, &o0, &o1);
