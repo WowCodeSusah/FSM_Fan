@@ -8,7 +8,7 @@ The graphs shows the 4 states and how they move from one another, with buttons -
 ## K-Map Truth Table
 ![map](img/map.png)
 
-With all the values from the FSM graph it is able to be converted to a truth table using each current state, inputs, next state, and output. current state and ouputs have the same value while inputs and next state depends on the graph from before with it we can determined all the values some values are d values as they dont appear in the finite state graph from before.
+With all the values from the FSM graph it is able to be converted to a truth table using each current state, inputs, next state, and output. current state and ouputs have the same value while inputs and next state depends on the graph from before with it we can determined all the values some values are d values as they dont appear in the finite state graph from before. okay
 ## K-Map Boolen Expressions
 ![bool](img/algebra.png)
 
