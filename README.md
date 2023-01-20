@@ -4,27 +4,27 @@ This code is a simulation of a fan's dial with 4 states which are off, speed 1, 
 ## Finite State Machine Graph
 ![FSM](img/Ex.png)
 
-The graphs shows the 4 states and how they move from one another, with buttons -> being forward, and <- being backwards. The state also dont change when any button is pressed. Each state also has a corresponding number attached to it being 00 for off, 01 for speed 1, 10 for speed 2, and 11 for speed 3. Each state has the same output value as the attached state numbers.
+The graphs shows the 4 states and how they move from one another, with buttons -> being forward, and <- being backwards. Each state also has a corresponding number attached to it being 00 for off, 01 for speed 1, 10 for speed 2, and 11 for speed 3. Each state has the same output value as the attached state numbers.
 ## K-Map Truth Table
 ![map](img/map.png)
 
-With all the values from the FSM graph it is able to be converted to a truth table using each current state, inputs, next state, and output. current state and ouputs have the same value while inputs and next state depends on the graph from before with it we can determined all the values some values are d values as they dont appear in the finite state graph from before. okay
+With all the values from the FSM graph it is able to be converted to a truth table using each current state, input, next state, and output. current state and ouputs have the same value while inputs and next state depends on the graph from before with it we can determined all the values some values are d values as they dont appear in the finite state graph from before.
 ## K-Map Boolen Expressions
 ![bool](img/algebra.png)
 
-After working out the truth table from before we can create boolen expressions for the next state and the outputs based on the current state and inputs for each column. which resolted in the upper 4 tables. With 1, 0, and d values based on the inputs and current state of each. We then make the boolen expressions for each table which resulted in these equations :
+After working out the truth table from before we can create boolen expressions for the next state and the outputs based on the current state and inputs for each column. which resolted in the upper 4 tables. With 1 and 0 values based on the inputs and current state of each. We then make the boolen expressions for each table which resulted in these equations :
 
-S0 = X1'X3 X4' + X2'X3 X4 + X2 X3'X4 + X1 X3'X4'
+S0 = X1'X2'X3' + X1X2X3' + X1'X2X3 + X1X2'X3
 
-S1 = X1'X2'X4 + X2 X4' + X1 X4'
+S1 = X2'
 
 O0 = X1
 
 O1 = X2
 
-with ' being a negation value, X1 and X2 for the input values, and X3 and X4 for the current state values.
+with ' being a negation value, X1 and X2 for the current state values, and X3 for the input.
 ## Output
-Now in C code the machine works as intended with 2 input values one being for button 1 and the second being for button 2 in the C code these data values are input1 and input2. These inputs work in the same way as in the first finite state machine graph that being when 01 is pressed it moves forward and if 10 is pressed it will go backwards. This is also true for 00 where nothing will happen. For each state refer to the images below.
+In the C inplementation it uses one input which can be 0 and 1 with 0 being backwards and 1 being forward. afterwards it will move to the next state or the before state. to understand further these images will be of use.
 ### State 1
 ![1](img/default.png)
 ### State 2
